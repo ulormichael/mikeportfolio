@@ -29,13 +29,13 @@ function Service() {
                 Business Strategy
                 </h1>
                 <p className="p service__text p__color">
-                I throw myself down among the
+                You can contact me
                 </p>
                 <p className="p service__text p__color">
-                tall grass by the stream as I lie
+                for this services.
                 </p>
                 <p className="p service__text p__color">
-                close to the earth
+                I am available at your service.
                 </p>
             </div>
           </div>
@@ -54,13 +54,13 @@ function Service() {
                 Web Development
                 </h1>
                 <p className="p service__text p__color">
-                I throw myself down among the
+                You can contact me
                 </p>
                 <p className="p service__text p__color">
-                tall grass by the stream as I lie
+                for this services.
                 </p>
                 <p className="p service__text p__color">
-                close to the earth
+                I am available at your service
                 </p>
             </div>
           </div>
@@ -80,13 +80,13 @@ function Service() {
                 Marketing and Networking
                 </h1>
                 <p className="p service__text p__color">
-                I throw myself down among the
+                You can contact me
                 </p>
                 <p className="p service__text p__color">
-                tall grass by the stream as I lie
+                for this services.
                 </p>
                 <p className="p service__text p__color">
-                close to the earth
+                I am available at your service
                 </p>
             </div>
           </div>
@@ -105,13 +105,13 @@ function Service() {
                 Social Media Marketing
                 </h1>
                 <p className="p service__text p__color">
-                I throw myself down among the
+                You can contact me
                 </p>
                 <p className="p service__text p__color">
-                tall grass by the stream as I lie
+                for this services.
                 </p>
                 <p className="p service__text p__color">
-                close to the earth
+                I am available at your service
                 </p>
             </div>
           </div>
@@ -131,13 +131,13 @@ function Service() {
                 Graphics Designs
                 </h1>
                 <p className="p service__text p__color">
-                I throw myself down among the
+                You can contact me
                 </p>
                 <p className="p service__text p__color">
-                tall grass by the stream as I lie
+                for this services.
                 </p>
                 <p className="p service__text p__color">
-                close to the earth
+                I am available at your service.
                 </p>
             </div>
           </div>
@@ -156,13 +156,13 @@ function Service() {
                 LinkedIn Profile Optimization
                 </h1>
                 <p className="p service__text p__color">
-                I throw myself down among the
+                You can contact me
                 </p>
                 <p className="p service__text p__color">
-                tall grass by the stream as I lie
+                for this services.
                 </p>
                 <p className="p service__text p__color">
-                close to the earth
+                I am available at your service.
                 </p>
             </div>
           </div>

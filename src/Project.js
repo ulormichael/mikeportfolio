@@ -10,8 +10,8 @@ function Project() {
     <div className="project component__space" id="Portfolio">
        <div className="heading">
             <h1 className="heading">My Latest Project</h1>
-            <p className="heading p__color">There are many variations of passages of Lorem Iosum</p>
-            <p className="heading p__color">There are many variations of passages</p>
+            <p className="heading p__color">You are welcome to view my latest projects</p>
+            <p className="heading p__color">Here are some of my latest projects</p>
         </div>
         <div className="container">
             <div className="row">
@@ -26,7 +26,7 @@ function Project() {
                         </div>
                         <div className="project__meta absolute">
                         <h5 className="project__text">Web Development</h5>
-                        <h4 className="project__text">Project yet to be uploaded</h4>
+                        <h4 className="project__text">Robo Friends app</h4>
                         <a href="https://aneagoie.github.io/robofriends/" className="project__btn">View Details</a>
                         </div>
                     </div>
