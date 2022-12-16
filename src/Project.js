@@ -25,9 +25,9 @@ function Project() {
                             <div className="mask__effect"></div>
                         </div>
                         <div className="project__meta absolute">
-                        <h5 className="project__text">Web Development</h5>
-                        <h4 className="project__text">Robo Friends app</h4>
-                        <a href="https://aneagoie.github.io/robofriends/" className="project__btn">View Details</a>
+                        <h5 className="project__text">Game Project</h5>
+                        <h4 className="project__text">Calculator App</h4>
+                        <a href="https://ulormichael.github.io/CalcProject/" target="_blank" className="project__btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -41,9 +41,9 @@ function Project() {
                             <div className="mask__effect"></div>
                         </div>
                         <div className="project__meta absolute">
-                        <h5 className="project__text">Web Development</h5>
-                        <h4 className="project__text">Project yet to be uploaded</h4>
-                        <a href="#" className="project__btn">View Details</a>
+                        <h5 className="project__text">Game Project</h5>
+                        <h4 className="project__text">Rock, Paper, Scissors Game</h4>
+                        <a href="https://ulormichael.github.io/RockPaperScissors/" target="_blank" className="project__btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -57,9 +57,9 @@ function Project() {
                             <div className="mask__effect"></div>
                         </div>
                         <div className="project__meta absolute">
-                        <h5 className="project__text">Web Development</h5>
-                        <h4 className="project__text">Project yet to be uploaded</h4>
-                        <a href="#" className="project__btn">View Details</a>
+                        <h5 className="project__text">Simple Website</h5>
+                        <h4 className="project__text">HTML Website</h4>
+                        <a href="https://ulormichael.github.io/html-css-website/" target="_blank" className="project__btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -73,9 +73,9 @@ function Project() {
                             <div className="mask__effect"></div>
                         </div>
                         <div className="project__meta absolute">
-                        <h5 className="project__text">Web Development</h5>
-                        <h4 className="project__text">Project yet to be uploaded</h4>
-                        <a href="#" className="project__btn">View Details</a>
+                        <h5 className="project__text">Classic Website</h5>
+                        <h4 className="project__text">HTML/CSS Single Web page</h4>
+                        <a href="https://ulormichael.github.io/css-website/" target="_blank" className="project__btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -89,9 +89,9 @@ function Project() {
                             <div className="mask__effect"></div>
                         </div>
                         <div className="project__meta absolute">
-                        <h5 className="project__text">Web Development</h5>
-                        <h4 className="project__text">Project yet to be uploaded</h4>
-                        <a href="#" className="project__btn">View Details</a>
+                        <h5 className="project__text">Game Project</h5>
+                        <h4 className="project__text">Tic Tac Toe Game</h4>
+                        <a href="https://ulormichael.github.io/TicTacToe_app/" target="_blank" className="project__btn">View Details</a>
                         </div>
                     </div>
                 </div>

@@ -30,7 +30,7 @@ function Blog() {
                         <div className="Blog__meta absolute">
                             <h5 className="project__text">Facebook</h5>
                             <h4 className="project__text">Find me on Facebook</h4>
-                            <a href="https://www.facebook.com/ulorseriesdesigns" className="blog project__btn btn">Click Here</a>
+                            <a href="https://www.facebook.com/ulorseriesdesigns" target="_blank" className="blog project__btn btn">Click Here</a>
                         </div>
                 </div>
                 </div>
@@ -46,7 +46,7 @@ function Blog() {
                         <div className="Blog__meta absolute">
                             <h5 className="project__text">Twitter</h5>
                             <h4 className="project__text">Find me on Twitter</h4>
-                            <a href="https://www.twitter.com/ulorseries" className="blog project__btn btn">Click Here</a>
+                            <a href="https://www.twitter.com/ulorseries" target="_blank" className="blog project__btn btn">Click Here</a>
                         </div>
                 </div>
                 </div>
@@ -62,7 +62,7 @@ function Blog() {
                         <div className="Blog__meta absolute">
                             <h5 className="project__text">LinkedIn</h5>
                             <h4 className="project__text">Find me on LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/ulormichael" className="blog project__btn btn">Click Here</a>
+                            <a href="https://www.linkedin.com/in/ulormichael" target="_blank" className="blog project__btn btn">Click Here</a>
                         </div>
                 </div>
                 </div>

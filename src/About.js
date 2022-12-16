@@ -20,7 +20,7 @@ function About() {
                     <h1 className="about__heading">About Me</h1>
                     <div className="about__meta">
                       <p className="about__text p__color">
-                      Hi, I’m Michael. I'm a web developer with 2 years of experiences in Web development. 
+                      Hi, I’m Michael. I am a Frontend developer with 3 years of experiences in HTML, CSS, JavaScript, Node.Js and React.Js. 
                       I'm also a freelance Graphics designer, i do Logo designs, Flyer designs, Business card designs, Banners and Posters designs.
                       I also design Professional resume (CV), setup LinkedIn profile optimization for customers.
                       </p>

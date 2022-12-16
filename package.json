@@ -1,6 +1,6 @@
 {
-  "homepage": ".",
-  "name": "mikeportfolio",
+  "homepage": "http://.",
+  "name": "c",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,5 +42,19 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulormichael/mikeportfolio.git"
+  },
+  "author": "michael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ulormichael/mikeportfolio/issues"
+  },
+  "keywords": [
+    "mikeportfolio"
+  ]
 }

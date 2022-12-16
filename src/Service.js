@@ -7,8 +7,8 @@ function Service() {
 
         <div className="heading">
             <h1 className="heading">My Awesome Services</h1>
-            <p className="heading p__color">There are many variations of passages of Lorem Iosum</p>
-            <p className="heading p__color">There are many variations of passages</p>
+            <p className="heading p__color">There are many variations of services i offer</p>
+            <p className="heading p__color">Here are some of the service i offer</p>
         </div>
         
         <div className="container">

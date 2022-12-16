@@ -73,7 +73,7 @@ function Home() {
                         Hi, I'm Michael Ulor
                         </h2>
                         <h3 className="home__text sweet pz__10">
-                        Web Developer.
+                        Frontend Developer
                         </h3>
                         <h4 className="home__text pz__10">
                         based in Nigeria.
