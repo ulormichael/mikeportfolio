@@ -105,9 +105,9 @@ function Project() {
                             <div className="mask__effect"></div>
                         </div>
                         <div className="project__meta absolute">
-                        <h5 className="project__text">Web Development</h5>
-                        <h4 className="project__text">Project yet to be uploaded</h4>
-                        <a href="#" className="project__btn">View Details</a>
+                        <h5 className="project__text">Movie Library</h5>
+                        <h4 className="project__text">Movie app</h4>
+                        <a href="https://ulormichael.github.io/movie-app/" className="project__btn">View Details</a>
                         </div>
                     </div>
                 </div>
