@@ -20,17 +20,18 @@ function About() {
                     <h1 className="about__heading">About Me</h1>
                     <div className="about__meta">
                       <p className="about__text p__color">
-                      Hi, I’m Michael. I am a Frontend developer with 3 years of experiences in HTML, CSS, JavaScript, Node.Js and React.Js. 
-                      I'm also a freelance Graphics designer, i do Logo designs, Flyer designs, Business card designs, Banners and Posters designs.
-                      I also design Professional resume (CV), setup LinkedIn profile optimization for customers.
+                      Hi, I'm Ulor Michael, a Front End Developer with a strong IT background and a passion for creating dynamic, user-friendly web applications. 
+                      With my experience i am driven by curiosity and a desire to build impactful digital solutions.
                       </p>
                       <p className="about__text p__color">
-                      My academic background, i hold a BSc degree in Industrial Chemistry from Adekunle Ajasin University but over
-                      the years after graduating from college i dived into Web development to pursue my career as a Web developer. Aside from
-                      my college degree i have also pursue my career in tech building my skills, taking up Professional courses to improve my knowledge.
+                      I hold a B.Sc degree in Industrial Chemistry from Adekunle Ajasin University and a Postgraduate degree in Chemical Engineering from the University of Lagos. 
+                      My diverse academic background enhances my analytical and problem-solving skills in tech.
                       </p>
                       <p className="about__text p__color">
-                      I am open for job opportunities and below is my resume to know more about me.
+                        Adding to this, I am also proficient in HTML, CSS, JavaScript, React, Node.js and Python. I am also familiar with Git, GitHub, and other tools that help me to work efficiently. 
+                      </p>
+                      <p className="about__text p__color">
+                        I am open for new job opportunities and below is my resume to know more about me. Thank you!
                       </p>
                       <div className="about__button d__flex align__items__center">
                         <a href={MyPDF} download="Ulor-CV.pdf"><button className="about btn pointer">Download CV</button></a>
