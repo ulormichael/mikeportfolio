@@ -28,7 +28,8 @@ function About() {
                       My diverse academic background enhances my analytical and problem-solving skills in tech.
                       </p>
                       <p className="about__text p__color">
-                        Adding to this, I am also proficient in HTML, CSS, JavaScript, React, Node.js and Python. I am also familiar with Git, GitHub, and other tools that help me to work efficiently. 
+                        Adding to this, I am also proficient in HTML, CSS, JavaScript, React, Node.js and Python. I am also familiar with version control applications like Git, GitHub, Netlify, 
+                        and other tools that help me to work efficiently. 
                       </p>
                       <p className="about__text p__color">
                         I am open for new job opportunities and below is my resume to know more about me. Thank you!
