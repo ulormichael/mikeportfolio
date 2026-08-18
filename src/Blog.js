@@ -28,8 +28,8 @@ function Blog() {
                             <div className="mask__effect"></div>
                         </div>
                         <div className="Blog__meta absolute">
-                            <h5 className="project__text">Facebook</h5>
-                            <h4 className="project__text">Find me on Facebook</h4>
+                            <h5 className="project__text">GitHub</h5>
+                            <h4 className="project__text">Connect with me on GitHub</h4>
                             <a href="https://www.facebook.com/ulorseriesdesigns" target="_blank" className="blog project__btn btn">Click Here</a>
                         </div>
                 </div>
@@ -45,7 +45,7 @@ function Blog() {
                         </div>
                         <div className="Blog__meta absolute">
                             <h5 className="project__text">Twitter</h5>
-                            <h4 className="project__text">Find me on Twitter</h4>
+                            <h4 className="project__text">Connect with me on Twitter</h4>
                             <a href="https://www.twitter.com/ulorseries" target="_blank" className="blog project__btn btn">Click Here</a>
                         </div>
                 </div>
@@ -61,7 +61,7 @@ function Blog() {
                         </div>
                         <div className="Blog__meta absolute">
                             <h5 className="project__text">LinkedIn</h5>
-                            <h4 className="project__text">Find me on LinkedIn</h4>
+                            <h4 className="project__text">Connect with me on LinkedIn</h4>
                             <a href="https://www.linkedin.com/in/ulormichael" target="_blank" className="blog project__btn btn">Click Here</a>
                         </div>
                 </div>
