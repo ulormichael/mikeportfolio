@@ -30,7 +30,7 @@ function Blog() {
                         <div className="Blog__meta absolute">
                             <h5 className="project__text">GitHub</h5>
                             <h4 className="project__text">Connect with me on GitHub</h4>
-                            <a href="https://www.facebook.com/ulorseriesdesigns" target="_blank" className="blog project__btn btn">Click Here</a>
+                            <a href="https://github.com/ulormichael" target="_blank" className="blog project__btn btn">Click Here</a>
                         </div>
                 </div>
                 </div>
