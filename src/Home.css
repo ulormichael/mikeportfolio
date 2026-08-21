@@ -124,4 +124,12 @@ h1.home__text {
 h4.home__text {
     font-size: 45px;
 }
+
+@media only screen and (max-width: 768px){
+svg.bi.bi-justify.white.pointer,
+svg.bi.bi-x-lg.white.pointer {
+    width: 30px;
+    height: 30px;
+}
+}
 }

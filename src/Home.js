@@ -20,6 +20,10 @@ function Home() {
     }, []);
 
     const closeSidebar = () => setShow(false);
+    const toggleMenu = () => setShow(!show);
+    const handleToggleKeyDown = (e) => {
+        if (e.key === "Enter" || e.key === " ") toggleMenu();
+    };
 
     return (
         <div className="home" id="Home">
@@ -41,20 +45,33 @@ function Home() {
 
                     {/* Toggle Menu */}
                     <div className="toggle__menu">
-                        <svg
-                            onClick={() => setShow(!show)}
-                            onKeyDown={(e) => {
-                                if (e.key === "Enter" || e.key === " ") setShow(!show);
-                            }}
-                            role="button"
-                            tabIndex={0}
-                            aria-label={show ? "Close menu" : "Open menu"}
-                            aria-expanded={show}
-                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            className="bi bi-justify white pointer"
-                            viewBox="0 0 16 16">
-                            <path fillRule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-                        </svg>
+                        {show ? (
+                            <svg
+                                onClick={toggleMenu}
+                                onKeyDown={handleToggleKeyDown}
+                                role="button"
+                                tabIndex={0}
+                                aria-label="Close menu"
+                                aria-expanded={true}
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                className="bi bi-x-lg white pointer"
+                                viewBox="0 0 16 16">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854z"/>
+                            </svg>
+                        ) : (
+                            <svg
+                                onClick={toggleMenu}
+                                onKeyDown={handleToggleKeyDown}
+                                role="button"
+                                tabIndex={0}
+                                aria-label="Open menu"
+                                aria-expanded={false}
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                className="bi bi-justify white pointer"
+                                viewBox="0 0 16 16">
+                                <path fillRule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        )}
                     </div>
 
                     {show ? (
