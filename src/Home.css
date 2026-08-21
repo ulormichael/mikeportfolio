@@ -1,5 +1,5 @@
 .home__bg{
-    background-image: url(/src/img/bg.jpg);
+    background-image: url(/src/img/bg.jpg); /* verify this resolves in prod build — see note */
     background-color: #010101;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -49,10 +49,18 @@ h4.home__text{
 .toggle__menu {
     display: flex;
     justify-content: flex-end;
-    float: right;
     z-index: 1000;
     width: 100%;
 }
+
+/* Sidebar wrapper — now has its own stacking context so it always sits above the header */
+.sideNavbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1100;
+}
+
 ul.sidebar.d__flex {
     flex-wrap: wrap;
     height: 100%;
@@ -64,8 +72,27 @@ ul.sidebar.d__flex {
     top: 0%;
     flex-direction: column;
 }
-li.sideNavbar{
+
+.sideNavbar__item {
     padding: 25px 30px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sideNavbar__item a {
+    color: #fff; /* placeholder — set to your default link color */
+    text-decoration: none;
+    display: block;
+}
+
+.sideNavbar__item:hover,
+.sideNavbar__item:focus-within {
+    background-color: rgba(255, 255, 255, 0.08); /* placeholder accent */
+}
+
+.sideNavbar__item:hover a,
+.sideNavbar__item:focus-within a {
+    color: #ffcc00; /* placeholder accent — match your brand color */
 }
 
 /* RESPONSIVE */
@@ -76,7 +103,7 @@ li.sideNavbar{
 .navigation.pxy__30 {
     display: none;
     }
-h2.white.pz__10 {
+h2.home__text.pz__10 {
     font-size: 50px!important;
 }
 svg.bi.bi-justify.white.pointer {

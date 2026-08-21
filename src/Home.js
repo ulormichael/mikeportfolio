@@ -4,7 +4,7 @@ import logo from "./img/logo.png";
 
 function Home() {
     // Toggle Menu
-    const [show, setShow] = useState(false); // see note below re: default state
+    const [show, setShow] = useState(false);
 
     // Fixed header on scroll
     useEffect(() => {
@@ -19,12 +19,14 @@ function Home() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    const closeSidebar = () => setShow(false);
+
     return (
         <div className="home" id="Home">
             <div className="home__bg">
                 <div className="header d__flex align__items__center pxy__30">
                     <div className="logo">
-                        <img src={logo} alt="" />
+                        <img src={logo} alt="Site logo" />
                     </div>
                     <div className="navigation pxy__30">
                         <ul className="navbar d__flex">
@@ -41,6 +43,13 @@ function Home() {
                     <div className="toggle__menu">
                         <svg
                             onClick={() => setShow(!show)}
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") setShow(!show);
+                            }}
+                            role="button"
+                            tabIndex={0}
+                            aria-label={show ? "Close menu" : "Open menu"}
+                            aria-expanded={show}
                             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             className="bi bi-justify white pointer"
                             viewBox="0 0 16 16">
@@ -51,12 +60,24 @@ function Home() {
                     {show ? (
                         <div className="sideNavbar">
                             <ul className="sidebar d__flex">
-                                <li className="sideNavbar"><a href="#Home">Home</a></li>
-                                <li className="sideNavbar"><a href="#About">About</a></li>
-                                <li className="sideNavbar"><a href="#Services">Services</a></li>
-                                <li className="sideNavbar"><a href="#Portfolio">Portfolio</a></li>
-                                <li className="sideNavbar"><a href="#Blog">Blog</a></li>
-                                <li className="sideNavbar"><a href="#Contact">Contact</a></li>
+                                <li className="sideNavbar__item" onClick={closeSidebar}>
+                                    <a href="#Home">Home</a>
+                                </li>
+                                <li className="sideNavbar__item" onClick={closeSidebar}>
+                                    <a href="#About">About</a>
+                                </li>
+                                <li className="sideNavbar__item" onClick={closeSidebar}>
+                                    <a href="#Services">Services</a>
+                                </li>
+                                <li className="sideNavbar__item" onClick={closeSidebar}>
+                                    <a href="#Portfolio">Portfolio</a>
+                                </li>
+                                <li className="sideNavbar__item" onClick={closeSidebar}>
+                                    <a href="#Blog">Blog</a>
+                                </li>
+                                <li className="sideNavbar__item" onClick={closeSidebar}>
+                                    <a href="#Contact">Contact</a>
+                                </li>
                             </ul>
                         </div>
                     ) : null}
@@ -83,6 +104,99 @@ function Home() {
 }
 
 export default Home;
+
+
+
+
+
+
+
+
+// import React, { useEffect, useState } from "react";
+// import "./Home.css";
+// import logo from "./img/logo.png";
+
+// function Home() {
+//     // Toggle Menu
+//     const [show, setShow] = useState(false); // see note below re: default state
+
+//     // Fixed header on scroll
+//     useEffect(() => {
+//         const header = document.querySelector(".header");
+//         if (!header) return;
+
+//         const handleScroll = () => {
+//             header.classList.toggle("active", window.scrollY > 0);
+//         };
+
+//         window.addEventListener("scroll", handleScroll);
+//         return () => window.removeEventListener("scroll", handleScroll);
+//     }, []);
+
+//     return (
+//         <div className="home" id="Home">
+//             <div className="home__bg">
+//                 <div className="header d__flex align__items__center pxy__30">
+//                     <div className="logo">
+//                         <img src={logo} alt="" />
+//                     </div>
+//                     <div className="navigation pxy__30">
+//                         <ul className="navbar d__flex">
+//                             <li className="nav__items mx__15"><a href="#Home">Home</a></li>
+//                             <li className="nav__items mx__15"><a href="#About">About</a></li>
+//                             <li className="nav__items mx__15"><a href="#Services">Services</a></li>
+//                             <li className="nav__items mx__15"><a href="#Portfolio">Portfolio</a></li>
+//                             <li className="nav__items mx__15"><a href="#Blog">Blog</a></li>
+//                             <li className="nav__items mx__15"><a href="#Contact">Contact</a></li>
+//                         </ul>
+//                     </div>
+
+//                     {/* Toggle Menu */}
+//                     <div className="toggle__menu">
+//                         <svg
+//                             onClick={() => setShow(!show)}
+//                             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+//                             className="bi bi-justify white pointer"
+//                             viewBox="0 0 16 16">
+//                             <path fillRule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+//                         </svg>
+//                     </div>
+
+//                     {show ? (
+//                         <div className="sideNavbar">
+//                             <ul className="sidebar d__flex">
+//                                 <li className="sideNavbar"><a href="#Home">Home</a></li>
+//                                 <li className="sideNavbar"><a href="#About">About</a></li>
+//                                 <li className="sideNavbar"><a href="#Services">Services</a></li>
+//                                 <li className="sideNavbar"><a href="#Portfolio">Portfolio</a></li>
+//                                 <li className="sideNavbar"><a href="#Blog">Blog</a></li>
+//                                 <li className="sideNavbar"><a href="#Contact">Contact</a></li>
+//                             </ul>
+//                         </div>
+//                     ) : null}
+//                 </div>
+
+//                 {/* HOME CONTENT */}
+//                 <div className="container">
+//                     <div className="home__content">
+//                         <div className="home__meta">
+//                             <h1 className="home__text pz__10">WELCOME TO MY DEVELOPER PORTFOLIO SITE</h1>
+//                             <h2 className="home__text pz__10">Hi, I'm Michael Ulor</h2>
+//                             <h3 className="home__text sweet pz__10">Frontend Developer</h3>
+//                             <h4 className="home__text pz__10">based in Nigeria.</h4>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+
+//             <div className="up__to__top__btn">
+//                 <a href="#Home" className="bottom__to__top">↑</a>
+//             </div>
+//         </div>
+//     );
+// }
+
+// export default Home;
 
 
 
